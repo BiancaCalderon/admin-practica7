@@ -1,7 +1,5 @@
 import pytest
-from text_manipulation import reverse, count_vowels, is_palindrome
-
-from text_manipulation import concat, to_upper
+from text_manipulation import reverse, count_vowels, is_palindrome, concat, to_upper
 
 # Pruebas para reverse
 def test_reverse_success():
