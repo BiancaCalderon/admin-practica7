@@ -17,12 +17,12 @@ def is_palindrome(s: str) -> bool:
     if not cleaned:
         return False
     return cleaned == cleaned[::-1]
+
 def to_upper(s):
     """Retorna la cadena de texto en mayúsculas."""
     if not isinstance(s, str):
         raise TypeError("s debe ser una cadena de texto")
     return s.upper()
-
 
 def concat(a, b):
     """Retorna la unión de dos cadenas de texto."""
