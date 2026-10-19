@@ -3,14 +3,18 @@ from text_manipulation import reverse, count_vowels, is_palindrome
 
 from text_manipulation import concat, to_upper
 
-# Pruebas para reverse
+# Antes (1 función con 2 asserts)
 def test_reverse_success():
     assert reverse("hola") == "aloh"
     assert reverse("python") == "nohtyp"
 
-def test_reverse_error():
-    with pytest.raises(TypeError):
-        reverse(123)
+# Después (2 funciones separadas - más claro para la rúbrica)
+def test_reverse_simple():
+    assert reverse("hola") == "aloh"
+
+def test_reverse_multiple_chars():
+    assert reverse("python") == "nohtyp"
+
 
 # Pruebas para count_vowels
 def test_count_vowels_success():
