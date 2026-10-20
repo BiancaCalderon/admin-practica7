@@ -16,7 +16,7 @@ def is_palindrome(s: str) -> bool:
     cleaned = ''.join(char.lower() for char in s if char.isalnum())
     if not cleaned:
         return False
-    return cleaned == cleaned[::-1]  #cambio
+    return cleaned == cleaned[::-1]  #cambio a pr arreglada
 def to_upper(s):
     """Retorna la cadena de texto en mayúsculas."""
     if not isinstance(s, str):
