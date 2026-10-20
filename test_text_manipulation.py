@@ -57,9 +57,7 @@ def test_to_upper_none():
     with pytest.raises(TypeError):
         to_upper(None)
 
-
 # concat
-
 def test_concat_dos_palabras():
     assert concat("hola", "mundo") == "holamundo"
 
@@ -80,3 +78,5 @@ def test_concat_primer_argumento_invalido():
 def test_concat_segundo_argumento_invalido():
     with pytest.raises(TypeError):
         concat("abc", None)
+
+# aqui finalizan las pruebas se hace pr de prueba
