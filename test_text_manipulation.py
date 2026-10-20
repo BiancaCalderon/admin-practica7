@@ -34,6 +34,8 @@ def test_is_palindrome_error():
     with pytest.raises(TypeError):
         is_palindrome(454)
 
+# to upper
+
 def test_to_upper_minusculas():
     assert to_upper("hola") == "HOLA"
 
