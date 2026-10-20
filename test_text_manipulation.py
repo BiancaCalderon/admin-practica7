@@ -1,14 +1,12 @@
 import pytest
-from text_manipulation import reverse, count_vowels, is_palindrome
+from text_manipulation import reverse, count_vowels, is_palindrome, concat, to_upper
 
-from text_manipulation import concat, to_upper
-
-# Antes (1 función con 2 asserts)
+# Antes
 def test_reverse_success():
     assert reverse("hola") == "aloh"
     assert reverse("python") == "nohtyp"
 
-# Después (2 funciones separadas - más claro para la rúbrica)
+# Después
 def test_reverse_simple():
     assert reverse("hola") == "aloh"
 
